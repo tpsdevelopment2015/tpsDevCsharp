@@ -1,0 +1,5 @@
+C:\Users\Tim\Documents\Visual Studio 2015\Projects\CodeSample\CodeSample\CodeSample\bin\Debug\CodeSample.exe
+C:\Users\Tim\Documents\Visual Studio 2015\Projects\CodeSample\CodeSample\CodeSample\bin\Debug\CodeSample.pdb
+C:\Users\Tim\Documents\Visual Studio 2015\Projects\CodeSample\CodeSample\CodeSample\obj\x86\Debug\CodeSample.csprojResolveAssemblyReference.cache
+C:\Users\Tim\Documents\Visual Studio 2015\Projects\CodeSample\CodeSample\CodeSample\obj\x86\Debug\CodeSample.exe
+C:\Users\Tim\Documents\Visual Studio 2015\Projects\CodeSample\CodeSample\CodeSample\obj\x86\Debug\CodeSample.pdb
