@@ -19,7 +19,11 @@ namespace TestPractice
             //MoveFile();
 
 
-            MoveFilesToFolders();
+            MoveFilesToFolders("C:\\Users\\Tim\\Desktop\\test");
+
+           
+
+
 
 
             Console.Read();
@@ -70,8 +74,14 @@ namespace TestPractice
 
         }//end MoveFile()
 
+
+
+
+
+
+
         //gets the file creation date and returns just the year created as a string
-        public String GetFileDate(string file)
+        public static String GetFileDate(string file)
         {
             DateTime fileCreationDate = File.GetCreationTime(file);
             string fileDate = fileCreationDate.Year.ToString();
@@ -80,48 +90,40 @@ namespace TestPractice
 
 
 
-        //WORKING ->    Moves files from one location to another
-        public static void MoveFilesToFolders()
-        {
-           string filePath = "C:\\Users\\tpaulson.IRONDALE\\Desktop\\A-Current Work\\TestFile";
-           string[] fileNames = Directory.GetFiles(filePath);
+        //moves files from designated root Dir to a new Dir Named for the year of the file
+        public static void MoveFilesToFolders(string rootPath)
+        { 
+           string[] fileNames = Directory.GetFiles(rootPath);
 
-            //create directory
-            string filePath2 = "C:\\Users\\tpaulson.IRONDALE\\Desktop\\A-Current Work\\TestFile2";
-
-            if (!System.IO.Directory.Exists(filePath2))
+            //create directory if needed and or move file to new location
+            foreach (string file in fileNames)
             {
-                
-                System.IO.Directory.CreateDirectory(filePath2);
-            }
-            else
-            {
+                string newFilePath = rootPath + "\\" + GetFileDate(file);
 
-            }
-
-            //foreach (string file in fileNames)
-            //{
-            //    try
-            //    {
-            //        /*
-            //         * write code to get file date.year, check to see if Dir exists, creates dir
-            //         * and moves file
-            //         * 
-            //         * https://msdn.microsoft.com/en-us/library/as2f1fez.aspx
-            //        */
-
-            //        string newLocationPath = "C:\\Users\\tpaulson.IRONDALE\\Desktop\\" +
-            //                                "A-Current Work\\TestFile\\newLocation\\" + Path.GetFileName(file);
-            //        File.Move(file, newLocationPath);
-            //    }
-            //    catch (Exception e)
-            //    {
-            //        Console.WriteLine("The process failed: {0}", e.ToString());
-            //    }
-
-            //    Console.WriteLine(file);
-
-            //}//end foreach loop
+                if (!System.IO.Directory.Exists(newFilePath))
+                {
+                    try
+                    {
+                        System.IO.Directory.CreateDirectory(newFilePath);
+                        File.Move(file, newFilePath + "\\"+ Path.GetFileName(file));
+                    }
+                    catch (Exception e)
+                    {
+                        Console.WriteLine("The process failed: {0}", e.ToString());
+                    }
+                }//end if
+                else
+                {
+                    try
+                    {
+                        File.Move(file, newFilePath + "\\" + Path.GetFileName(file));
+                    }
+                    catch (Exception e)
+                    {
+                        Console.WriteLine("The process failed: {0}", e.ToString());
+                    }
+                }//end else
+            }//end foreach
 
             Console.Read();
 
