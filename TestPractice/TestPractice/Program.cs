@@ -90,7 +90,7 @@ namespace TestPractice
 
 
 
-        //moves files from designated root Directory to a new Dir Named for the year of the file
+        //moves files from designated root Directory1 to a new Dir Named for the year of the file
         public static void MoveFilesToFolders(string rootPath)
         { 
            string[] fileNames = Directory.GetFiles(rootPath);
