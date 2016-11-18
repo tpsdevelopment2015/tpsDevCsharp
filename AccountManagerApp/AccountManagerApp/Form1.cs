@@ -16,5 +16,10 @@ namespace AccountManagerApp
         {
             InitializeComponent();
         }
+
+        private void modifyAccountToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
