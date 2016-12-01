@@ -34,13 +34,13 @@
             this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addAccountToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.printToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.printToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.modifyAccountToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deleteAccountToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.printToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -73,20 +73,32 @@
             this.newToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.addAccountToolStripMenuItem});
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(115, 26);
             this.newToolStripMenuItem.Text = "New";
             // 
             // addAccountToolStripMenuItem
             // 
             this.addAccountToolStripMenuItem.Name = "addAccountToolStripMenuItem";
-            this.addAccountToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.addAccountToolStripMenuItem.Size = new System.Drawing.Size(170, 26);
             this.addAccountToolStripMenuItem.Text = "Add Account";
             // 
             // printToolStripMenuItem
             // 
             this.printToolStripMenuItem.Name = "printToolStripMenuItem";
-            this.printToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.printToolStripMenuItem.Size = new System.Drawing.Size(115, 26);
             this.printToolStripMenuItem.Text = "Save";
+            // 
+            // printToolStripMenuItem1
+            // 
+            this.printToolStripMenuItem1.Name = "printToolStripMenuItem1";
+            this.printToolStripMenuItem1.Size = new System.Drawing.Size(115, 26);
+            this.printToolStripMenuItem1.Text = "Print";
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(115, 26);
+            this.exitToolStripMenuItem.Text = "Exit";
             // 
             // editToolStripMenuItem
             // 
@@ -122,20 +134,8 @@
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(129, 26);
             this.aboutToolStripMenuItem.Text = "About ";
-            // 
-            // printToolStripMenuItem1
-            // 
-            this.printToolStripMenuItem1.Name = "printToolStripMenuItem1";
-            this.printToolStripMenuItem1.Size = new System.Drawing.Size(181, 26);
-            this.printToolStripMenuItem1.Text = "Print";
-            // 
-            // exitToolStripMenuItem
-            // 
-            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
-            this.exitToolStripMenuItem.Text = "Exit";
             // 
             // Form1
             // 
@@ -147,6 +147,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Account Manager";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
