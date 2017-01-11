@@ -26,5 +26,13 @@ namespace AccountManagerApp
         {
 
         }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("DO YOU WANT TO SAVE CHANGES?", "SAVE CHANGES",
+            MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            Application.Exit();
+        }
     }
 }
