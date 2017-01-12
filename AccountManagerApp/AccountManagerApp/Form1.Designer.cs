@@ -34,13 +34,19 @@
             this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addAccountToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.printToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.printToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.modifyAccountToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deleteAccountToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.label1 = new System.Windows.Forms.Label();
+            this.acctNameListBox = new System.Windows.Forms.ListBox();
+            this.addAcctBtn = new System.Windows.Forms.Button();
+            this.deleteAcctBtn = new System.Windows.Forms.Button();
+            this.editBtn = new System.Windows.Forms.Button();
+            this.acctInfoGroupBox = new System.Windows.Forms.GroupBox();
+            this.saveBtn = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -62,7 +68,6 @@
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.newToolStripMenuItem,
             this.printToolStripMenuItem,
-            this.printToolStripMenuItem1,
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(44, 24);
@@ -73,31 +78,25 @@
             this.newToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.addAccountToolStripMenuItem});
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(115, 26);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.newToolStripMenuItem.Text = "New";
             // 
             // addAccountToolStripMenuItem
             // 
             this.addAccountToolStripMenuItem.Name = "addAccountToolStripMenuItem";
-            this.addAccountToolStripMenuItem.Size = new System.Drawing.Size(170, 26);
+            this.addAccountToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.addAccountToolStripMenuItem.Text = "Add Account";
             // 
             // printToolStripMenuItem
             // 
             this.printToolStripMenuItem.Name = "printToolStripMenuItem";
-            this.printToolStripMenuItem.Size = new System.Drawing.Size(115, 26);
+            this.printToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.printToolStripMenuItem.Text = "Save";
-            // 
-            // printToolStripMenuItem1
-            // 
-            this.printToolStripMenuItem1.Name = "printToolStripMenuItem1";
-            this.printToolStripMenuItem1.Size = new System.Drawing.Size(115, 26);
-            this.printToolStripMenuItem1.Text = "Print";
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(115, 26);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -135,14 +134,90 @@
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(129, 26);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.aboutToolStripMenuItem.Text = "About ";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(12, 91);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(100, 17);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Account Name";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // acctNameListBox
+            // 
+            this.acctNameListBox.AllowDrop = true;
+            this.acctNameListBox.FormattingEnabled = true;
+            this.acctNameListBox.ItemHeight = 16;
+            this.acctNameListBox.Location = new System.Drawing.Point(118, 88);
+            this.acctNameListBox.Name = "acctNameListBox";
+            this.acctNameListBox.Size = new System.Drawing.Size(223, 20);
+            this.acctNameListBox.TabIndex = 2;
+            // 
+            // addAcctBtn
+            // 
+            this.addAcctBtn.BackColor = System.Drawing.Color.Yellow;
+            this.addAcctBtn.Location = new System.Drawing.Point(12, 45);
+            this.addAcctBtn.Name = "addAcctBtn";
+            this.addAcctBtn.Size = new System.Drawing.Size(76, 23);
+            this.addAcctBtn.TabIndex = 3;
+            this.addAcctBtn.Text = "Add Icon";
+            this.addAcctBtn.UseVisualStyleBackColor = false;
+            // 
+            // deleteAcctBtn
+            // 
+            this.deleteAcctBtn.BackColor = System.Drawing.Color.Red;
+            this.deleteAcctBtn.Location = new System.Drawing.Point(645, 45);
+            this.deleteAcctBtn.Name = "deleteAcctBtn";
+            this.deleteAcctBtn.Size = new System.Drawing.Size(108, 23);
+            this.deleteAcctBtn.TabIndex = 4;
+            this.deleteAcctBtn.Text = "Delete Acct";
+            this.deleteAcctBtn.UseVisualStyleBackColor = false;
+            // 
+            // editBtn
+            // 
+            this.editBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.editBtn.Location = new System.Drawing.Point(94, 45);
+            this.editBtn.Name = "editBtn";
+            this.editBtn.Size = new System.Drawing.Size(75, 23);
+            this.editBtn.TabIndex = 5;
+            this.editBtn.Text = "Edit Acct";
+            this.editBtn.UseVisualStyleBackColor = false;
+            // 
+            // acctInfoGroupBox
+            // 
+            this.acctInfoGroupBox.Location = new System.Drawing.Point(15, 128);
+            this.acctInfoGroupBox.Name = "acctInfoGroupBox";
+            this.acctInfoGroupBox.Size = new System.Drawing.Size(738, 485);
+            this.acctInfoGroupBox.TabIndex = 6;
+            this.acctInfoGroupBox.TabStop = false;
+            this.acctInfoGroupBox.Text = "Account Information";
+            // 
+            // saveBtn
+            // 
+            this.saveBtn.BackColor = System.Drawing.Color.Lime;
+            this.saveBtn.Location = new System.Drawing.Point(175, 45);
+            this.saveBtn.Name = "saveBtn";
+            this.saveBtn.Size = new System.Drawing.Size(75, 23);
+            this.saveBtn.TabIndex = 7;
+            this.saveBtn.Text = "Save";
+            this.saveBtn.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(765, 625);
+            this.Controls.Add(this.saveBtn);
+            this.Controls.Add(this.acctInfoGroupBox);
+            this.Controls.Add(this.editBtn);
+            this.Controls.Add(this.deleteAcctBtn);
+            this.Controls.Add(this.addAcctBtn);
+            this.Controls.Add(this.acctNameListBox);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
@@ -168,8 +243,14 @@
         private System.Windows.Forms.ToolStripMenuItem printToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem printToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ListBox acctNameListBox;
+        private System.Windows.Forms.Button addAcctBtn;
+        private System.Windows.Forms.Button deleteAcctBtn;
+        private System.Windows.Forms.Button editBtn;
+        private System.Windows.Forms.GroupBox acctInfoGroupBox;
+        private System.Windows.Forms.Button saveBtn;
     }
 }
 
