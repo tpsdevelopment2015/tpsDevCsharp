@@ -39,5 +39,15 @@ namespace AccountManagerApp
         {
 
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void notesTxtBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
