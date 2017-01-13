@@ -88,7 +88,7 @@
             this.newToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.addAccountToolStripMenuItem});
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(115, 26);
             this.newToolStripMenuItem.Text = "New";
             // 
             // addAccountToolStripMenuItem
@@ -100,13 +100,13 @@
             // printToolStripMenuItem
             // 
             this.printToolStripMenuItem.Name = "printToolStripMenuItem";
-            this.printToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.printToolStripMenuItem.Size = new System.Drawing.Size(115, 26);
             this.printToolStripMenuItem.Text = "Save";
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(115, 26);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -144,7 +144,7 @@
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(129, 26);
             this.aboutToolStripMenuItem.Text = "About ";
             // 
             // acctNameLbl
@@ -167,6 +167,7 @@
             this.acctNameListBox.Name = "acctNameListBox";
             this.acctNameListBox.Size = new System.Drawing.Size(223, 20);
             this.acctNameListBox.TabIndex = 2;
+            this.acctNameListBox.SelectedIndexChanged += new System.EventHandler(this.acctNameListBox_SelectedIndexChanged);
             // 
             // addAcctBtn
             // 

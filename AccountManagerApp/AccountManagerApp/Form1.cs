@@ -49,5 +49,12 @@ namespace AccountManagerApp
         {
 
         }
-    }
-}
+
+        private void acctNameListBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+       
+    }//end class
+}//end namespace

@@ -19,6 +19,12 @@ namespace AccountManagerApp
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
+            
+            //creates a list for the account objects to me loaded to
+            List<Account> mylist = new List<Account>();
+
+
+
         }//end main()
 
     }//end class Program
