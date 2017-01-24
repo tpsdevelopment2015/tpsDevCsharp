@@ -1,4 +1,6 @@
-﻿using System;
+﻿//this simple program was written to help my kids with their math homework. 
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,7 +14,7 @@ namespace MathGame
 
         static void Main(string[] args)
         {
-            bool go = true;
+            //bool go = true;
 
             Console.WriteLine("***THE MATH + GAME = \"THE MATH GAME\"***\n");
             Thread.Sleep(3000);
