@@ -1,4 +1,6 @@
-﻿using System;
+//this program was written for fun as a quick way to kill the Chrome process when the browser freezes. 
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
