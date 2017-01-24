@@ -1,4 +1,6 @@
 ﻿//this simple program was written to help my kids with their math homework. 
+//the program will generate 10 random math equations for the user to solve.
+
 
 using System;
 using System.Collections.Generic;
