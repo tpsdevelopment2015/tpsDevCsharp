@@ -1,4 +1,4 @@
-﻿//this program kills the chrome process
+﻿
 using System;
 using System.Collections.Generic;
 using System.Linq;
