@@ -1,9 +1,9 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace MathGameV2_UnitTest
+namespace AMEEXPCalcTest
 {
-    [TestClass]//needs to use NUnit syntax
+    [TestClass]
     public class UnitTest1
     {
         [TestMethod]
