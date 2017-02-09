@@ -23,6 +23,10 @@ namespace AMEEXPCalc
         public MainWindow()
         {
             InitializeComponent();
+            
+
         }
+        
+       
     }
 }
